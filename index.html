@@ -4,30 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Política de Privacidad / Privacy Policy - DOBLEU</title>
-  <meta name="description" content="Política de Privacidad / Privacy Policy of DOBLEU, developed by WONTEC Soluciones Innovadoras." />
+  <meta name="description" content="Política de Privacidad / Privacy Policy of DOBLEU (WONTEC Soluciones Innovadoras). ES / EN." />
+  <meta name="robots" content="index,follow" />
   <style>
     :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
     body {
       font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
-      max-width: 960px; margin: 48px auto; padding: 0 20px; line-height: 1.7; color: #222;
+      max-width: 980px; margin: 48px auto; padding: 0 20px; line-height: 1.7; color: #222; background: #fff;
     }
-    h1 { color: #ff8800; margin-bottom: 0.2rem; }
-    h2 { margin-top: 2rem; color: #333; }
+    h1 { color: #ff8800; margin: 0 0 .25rem; font-size: 1.9rem; }
+    h2 { margin-top: 2rem; color: #333; font-size: 1.3rem; }
     p, li { font-size: 1rem; }
-    .muted { color: #666; font-size: 0.95rem; }
+    .muted { color: #666; font-size: .95rem; }
     .card {
       border: 1px solid #eee; border-radius: 12px; padding: 16px 20px; background: #fff;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 4px rgba(0,0,0,.04);
     }
     a { color: #0b57d0; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    ul { margin: 0.6rem 0 0.6rem 1.2rem; }
-    hr { border: none; border-top: 2px solid #ddd; margin: 3rem 0; }
+    ul { margin: .6rem 0 .6rem 1.2rem; }
+    hr { border: none; border-top: 2px solid #eee; margin: 2.5rem 0; }
+    code { background: #f6f6f6; padding: 2px 6px; border-radius: 6px; }
+    footer { margin-top: 32px; color: #666; font-size: .95rem; }
     @media (prefers-color-scheme: dark) {
       body { color: #e6e6e6; background: #0f1115; }
       .card { background: #151821; border-color: #242736; }
       h1 { color: #ffad47; }
       a { color: #8ab4ff; }
+      code { background: #202430; }
+      hr { border-top-color: #242736; }
     }
   </style>
 </head>
@@ -39,12 +45,12 @@
 
   <section class="card">
     <p>
-      DOBLEU es una aplicación desarrollada por <strong>WONTEC Soluciones Innovadoras</strong> (“WONTEC”, “nosotros”) / 
+      DOBLEU es una aplicación desarrollada por <strong>WONTEC Soluciones Innovadoras</strong> (“WONTEC”, “nosotros”) /
       DOBLEU is an application developed by <strong>WONTEC Soluciones Innovadoras</strong> (“WONTEC”, “we”).
     </p>
     <p>
-      Esta política explica cómo recolectamos, usamos, compartimos y protegemos los datos personales de los usuarios (consumidores, repartidores y negocios locales) en Android e iOS / 
-      This policy explains how we collect, use, share, and protect personal data of users (consumers, drivers, and local businesses) in Android and iOS.
+      Esta política explica cómo recolectamos, usamos, compartimos y protegemos tus datos personales (consumidores, repartidores y negocios locales) en Android e iOS /
+      This policy explains how we collect, use, share, and protect your personal data (consumers, drivers, and local businesses) on Android and iOS.
     </p>
   </section>
 
@@ -52,70 +58,112 @@
   <p>
     Responsable: <strong>WONTEC Soluciones Innovadoras</strong> / Data Controller: <strong>WONTEC Soluciones Innovadoras</strong><br />
     Representante: <strong>Brayan Fermín García Pérez</strong> (RFC: GAPB921017M32) / Representative: <strong>Brayan Fermín García Pérez</strong> (RFC: GAPB921017M32)<br />
-    Correo de contacto: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a> / Contact email: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a><br />
-    País de operación: México / Country of operation: Mexico
+    Contacto: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a> / Contact: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a><br />
+    País de operación principal: México / Main country of operation: Mexico
   </p>
 
-  <h2>2) Datos personales / Personal Data Collected</h2>
+  <h2>2) Datos personales que recolectamos / Personal Data We Collect</h2>
   <ul>
-    <li>Identificación, contacto, ubicación (si se autoriza), credenciales de acceso, datos técnicos y comerciales / Identification, contact info, location (if authorized), login credentials, technical and business data.</li>
-    <li>Inicio de sesión con Apple ID (solo iOS) / Sign in with Apple ID (iOS only) – solo se usa nombre y correo relay proporcionado por Apple / only name and relay email provided by Apple are used.</li>
-    <li>Datos de pago procesados por Stripe (sin almacenar números de tarjeta) / Payment data processed by Stripe (no card numbers stored).</li>
-    <li>Analítica y diagnósticos con Firebase y Crashlytics / Analytics and diagnostics with Firebase and Crashlytics.</li>
+    <li>Identificación y contacto (nombre, email, teléfono) / Identification and contact (name, email, phone).</li>
+    <li>Credenciales de acceso (cuenta DOBLEU) / Login credentials (DOBLEU account).</li>
+    <li>Inicio de sesión con Apple ID (iOS): usamos únicamente nombre y correo relay de Apple / Sign in with Apple ID (iOS): we only use your name and Apple relay email.</li>
+    <li>Datos de ubicación (si los autorizas) / Location data (if authorized).</li>
+    <li>Datos técnicos y de uso (dispositivo, versión de app, eventos) / Technical and usage data (device, app version, events).</li>
+    <li>Repartidores: licencia/identificación y comprobantes requeridos / Drivers: license/ID and required documentation.</li>
+    <li>Negocios: datos de comercio, contacto y ubicación general / Businesses: commerce data, contact, and general location.</li>
+    <li>Pagos vía Stripe: no almacenamos números de tarjeta / Payments via Stripe: we do not store card numbers.</li>
   </ul>
 
   <h2>3) Finalidades / Purposes</h2>
   <ul>
-    <li>Registrar e iniciar sesión / To register and sign in.</li>
-    <li>Mostrar negocios, coordinar pedidos y entregas / To display businesses, manage orders and deliveries.</li>
-    <li>Mejorar la experiencia y prevenir fraudes / To improve user experience and prevent fraud.</li>
-    <li>Cumplir obligaciones legales / To comply with legal obligations.</li>
+    <li>Registrar e iniciar sesión; gestionar tu cuenta / Register and sign in; manage your account.</li>
+    <li>Mostrar negocios, procesar pedidos y coordinar entregas / Display businesses, process orders, and coordinate deliveries.</li>
+    <li>Comunicaciones operativas y soporte / Operational communications and support.</li>
+    <li>Analítica, mejora de producto, prevención de fraude / Analytics, product improvement, fraud prevention.</li>
+    <li>Cumplimiento de obligaciones legales / Compliance with legal obligations.</li>
   </ul>
 
   <h2>4) Base legal / Legal Basis</h2>
   <ul>
     <li>Consentimiento / Consent.</li>
     <li>Ejecución de contrato / Contract performance.</li>
-    <li>Interés legítimo / Legitimate interest (security and improvement).</li>
+    <li>Interés legítimo (seguridad y mejora) / Legitimate interest (security and improvement).</li>
     <li>Obligación legal / Legal obligation.</li>
   </ul>
 
   <h2>5) Permisos del dispositivo / Device Permissions</h2>
   <ul>
-    <li>Ubicación: mostrar negocios cercanos y calcular rutas / Location: show nearby businesses and calculate routes.</li>
-    <li>Cámara: subir foto de perfil o comprobante de entrega / Camera: upload profile or delivery confirmation photo.</li>
-    <li>Almacenamiento: guardar imágenes o recibos / Storage: save images or receipts.</li>
+    <li>Ubicación: mostrar negocios cercanos y calcular rutas de entrega / Location: show nearby businesses and compute delivery routes.</li>
+    <li>Cámara/Galería: foto de perfil o comprobantes de entrega / Camera/Gallery: profile photo or delivery proof.</li>
+    <li>Almacenamiento: guardar imágenes o recibos asociados / Storage: save associated images or receipts.</li>
   </ul>
-  <p>El usuario puede denegar permisos; algunas funciones pueden limitarse / The user may deny permissions; some functions may be limited.</p>
+  <p class="muted">Puedes denegar permisos; algunas funciones pueden limitarse / You may deny permissions; some features may be limited.</p>
 
-  <h2>6) Conservación / Data Retention</h2>
-  <p>Los datos se conservan mientras la cuenta esté activa y hasta 5 años después de su cierre / Data is retained while the account is active and up to 5 years after closure for legal compliance.</p>
+  <h2>6) Conservación de datos / Data Retention</h2>
+  <p>
+    Conservamos los datos mientras tu cuenta esté activa y hasta 5 años después del cierre para fines legales y auditoría /
+    We retain data while your account is active and up to 5 years after closure for legal and audit purposes.
+  </p>
 
-  <h2>7) Compartición / Data Sharing</h2>
+  <h2>7) Compartición de datos / Data Sharing</h2>
   <ul>
-    <li>Proveedores tecnológicos: Firebase (Google Cloud), Stripe (pagos), hosting seguro / Tech providers: Firebase (Google Cloud), Stripe (payments), secure hosting.</li>
-    <li>Negocios y repartidores: datos mínimos para completar pedidos / Businesses and drivers: minimal data required to complete orders.</li>
-    <li>Autoridades: solo ante requerimiento legal válido / Authorities: only upon valid legal request.</li>
+    <li>Proveedores tecnológicos: <strong>Firebase (Google Cloud)</strong> para autenticación/analítica; <strong>Stripe</strong> para pagos; hosting seguro /
+        Tech providers: <strong>Firebase (Google Cloud)</strong> for auth/analytics; <strong>Stripe</strong> for payments; secure hosting.</li>
+    <li>Negocios y repartidores: datos mínimos para completar pedidos y entregas /
+        Businesses and drivers: minimal data to fulfill orders and deliveries.</li>
+    <li>Autoridades competentes: solo ante requerimiento legal válido /
+        Competent authorities: only upon valid legal request.</li>
   </ul>
+  <p class="muted">WONTEC no vende datos personales / WONTEC does not sell personal data.</p>
 
   <h2>8) Seguridad / Security</h2>
-  <p>Aplicamos cifrado TLS, control de accesos y monitoreo constante / We apply TLS encryption, access controls, and constant monitoring.</p>
+  <p>
+    Usamos cifrado TLS, controles de acceso y monitoreo continuo; ningún sistema es 100% infalible, respondemos ante incidentes /
+    We use TLS encryption, access controls, and continuous monitoring; no system is 100% infallible, we respond to incidents.
+  </p>
 
-  <h2>9) Derechos y eliminación de cuenta / User Rights & Account Deletion</h2>
-  <p>Puedes ejercer tus derechos o eliminar tu cuenta desde la app (Perfil → Configuración → Eliminar cuenta) o por correo / You can exercise your rights or delete your account from the app (Profile → Settings → Delete Account) or via email.</p>
+  <h2>9) Tus derechos y eliminación de cuenta / Your Rights & Account Deletion</h2>
+  <p>
+    Puedes ejercer derechos de acceso, rectificación, cancelación y oposición, y eliminar tu cuenta desde la app
+    (Perfil → Configuración → Eliminar cuenta) o escribiendo a <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a> /
+    You can exercise access, rectification, cancellation, and objection rights, and delete your account in-app
+    (Profile → Settings → Delete Account) or by emailing <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a>.
+  </p>
 
   <h2>10) Menores de edad / Minors</h2>
-  <p>La app no está dirigida a menores de 18 años / The app is not intended for users under 18 years old.</p>
+  <p>
+    La app no está dirigida a menores de 18 años; si detectamos datos sin autorización, los eliminaremos /
+    The app is not intended for users under 18; if we detect unauthorized data, we will delete it.
+  </p>
 
   <h2>11) Cookies y tecnologías / Cookies & Technologies</h2>
-  <p>Solo usamos cookies para mantener la sesión y analítica interna, sin rastreo entre apps o sitios / We only use cookies to maintain session and internal analytics, without cross-app or website tracking.</p>
+  <p>
+    Usamos cookies/identificadores locales para sesión y analítica interna; no realizamos rastreo entre apps o sitios /
+    We use cookies/local identifiers for session and internal analytics; we do not track across apps or websites.
+  </p>
 
-  <h2>12) Cambios a esta política / Updates</h2>
-  <p>Publicaremos cualquier cambio en este mismo enlace con nueva fecha de vigencia / We will publish any updates on this page with a new effective date.</p>
+  <h2>12) Requerimientos y permisos municipales / Local Permits</h2>
+  <p>
+    WONTEC cuenta con permiso operativo vigente ante la Presidencia Municipal de Atotonilco de Tula, Hidalgo (renovación anual) /
+    WONTEC maintains a valid operating permit with the Atotonilco de Tula, Hidalgo Municipal Presidency (renewed annually).
+  </p>
 
-  <h2>13) Contacto / Contact</h2>
-  <p>Correo: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a> / Email: <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a><br />
-  © <span id="y"></span> WONTEC Soluciones Innovadoras • DOBLEU</p>
+  <h2>13) Cambios a esta política / Updates to this Policy</h2>
+  <p>
+    Publicaremos cambios en este mismo enlace con nueva fecha de vigencia; cuando corresponda, notificaremos en la app /
+    We will publish updates on this page with a new effective date; where appropriate, we will notify in-app.
+  </p>
+
+  <h2>14) Contacto / Contact</h2>
+  <p>
+    <a href="mailto:contacto@wontec.mx">contacto@wontec.mx</a> •
+    <a href="mailto:brayan.fermin.garcia.perez@gmail.com">brayan.fermin.garcia.perez@gmail.com</a>
+  </p>
+
+  <hr />
+  <footer>
+    © <span id="y"></span> WONTEC Soluciones Innovadoras • DOBLEU
+  </footer>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
