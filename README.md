@@ -10,7 +10,7 @@ Este repositorio contiene la **Política de Privacidad** oficial de la aplicaci�
 - **Representante**: Brayan Fermín García Pérez (RFC: GAPB921017M32)  
 - **Correos de contacto**:
   - brayan.fermin.garcia.perez@gmail.com  
-  - contacto@wontec.mx
+  - fermin.garcia@wontec.org
 
 ---
 
